@@ -14,7 +14,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		from = r.URL.String()
 	}
 	if from != "/favicon.ico" {
-		log.Printf("Gil's title is: %s\n", title)
+		log.Printf("Gil's laptop title is: %s\n", title)
 	}
 
 	fmt.Fprintf(w, "Hello from:  "+title+"\n")
